@@ -6,6 +6,8 @@ import { HeaderComponent } from './shared/header/header.component';
 import { LateralMenuComponent } from './shared/lateral-menu/lateral-menu.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { BellsComponent } from './pages/bells/bells.component';
+import { AppRoutingMogule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -13,10 +15,12 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
     HeaderComponent,
     LateralMenuComponent,
     FooterComponent,
-    DashboardComponent
+    DashboardComponent,
+    BellsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingMogule,
   ],
   providers: [],
   bootstrap: [AppComponent]
