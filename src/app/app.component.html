@@ -1,6 +1,6 @@
-<app-lateral-menu></app-lateral-menu>
+<app-lateral-menu *ngIf="isLoginPage"></app-lateral-menu>
 
-<div id="right-panel" class="right-panel">
+<div *ngIf="isLoginPage" id="right-panel" class="right-panel">
 
     <app-header></app-header>
 
@@ -15,3 +15,5 @@
     <app-footer></app-footer>
 
 </div>
+
+<router-outlet *ngIf="!isLoginPage"></router-outlet>

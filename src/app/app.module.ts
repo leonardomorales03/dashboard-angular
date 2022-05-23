@@ -8,6 +8,12 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { BellsComponent } from './pages/bells/bells.component';
 import { AppRoutingMogule } from './app-routing.module';
+import { AuthGuard } from './pages/auth/auth.guard';
+import { LoginComponent } from './pages/login/login.component';
+import { FormsModule } from '@angular/forms';
+import { AuthService } from './shared/services/auth.service';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { InterceptorService } from './shared/services/interceptor.service';
 
 @NgModule({
   declarations: [
@@ -16,13 +22,20 @@ import { AppRoutingMogule } from './app-routing.module';
     LateralMenuComponent,
     FooterComponent,
     DashboardComponent,
-    BellsComponent
+    BellsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingMogule,
+    FormsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true },
+    AuthGuard,
+    AuthService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

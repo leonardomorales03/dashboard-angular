@@ -6,5 +6,36 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   title = 'FrontdSms';
+  isLoginPage = false;
+
+  constructor(){}
+
+  ngOnInit(): void {
+    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+    //Add 'implements OnInit' to the class.
+    
+  }
+
+  public viewAsLoginPage(isLoginPage) {
+    this.isLoginPage = isLoginPage;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
