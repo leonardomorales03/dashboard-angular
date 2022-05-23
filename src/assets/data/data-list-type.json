@@ -1,0 +1,21 @@
+{
+    "state": true,
+    "code": 201,
+    "message": [
+        {
+            "id": "0634c3b5-d9f6-11ec-ba04-06ffa341e858",
+            "name": "Días ejecución",
+            "status": 1
+        },
+        {
+            "id": "c800e869-d9f5-11ec-ba04-06ffa341e858",
+            "name": "Frencuencia",
+            "status": 1
+        },
+        {
+            "id": "c8e12aca-d9f5-11ec-ba04-06ffa341e858",
+            "name": "Días No Habiles",
+            "status": 1
+        }
+    ]
+}

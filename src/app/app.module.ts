@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { AuthService } from './shared/services/auth.service';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { InterceptorService } from './shared/services/interceptor.service';
+import { ParameterService } from './shared/services/parameter.service';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { InterceptorService } from './shared/services/interceptor.service';
     { provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true },
     AuthGuard,
     AuthService,
+    ParameterService,
   ],
   bootstrap: [AppComponent]
 })

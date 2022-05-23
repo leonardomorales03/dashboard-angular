@@ -10,8 +10,8 @@ import { LoginComponent } from './pages/login/login.component';
 const app_routes: Routes = [
 
     { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard]  },
-    { path: 'bells', component: BellsComponent },
-    { path: 'login', component: LoginComponent },
+    { path: 'bells', component: BellsComponent, canActivate: [AuthGuard] },
+    { path: 'login', component: LoginComponent }, 
     { path: '**', pathMatch: 'full', redirectTo: 'dashboard' },
 
 

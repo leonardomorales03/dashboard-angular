@@ -1,0 +1,160 @@
+{
+    "state": true,
+    "code": 201,
+    "message": [
+        {
+            "id": "88b4306d-d9f7-11ec-ba04-06ffa341e858",
+            "value": "20/06/2022",
+            "status": 1,
+            "type": {
+                "id": "c8e12aca-d9f5-11ec-ba04-06ffa341e858",
+                "name": "Días No Habiles",
+                "status": 1,
+                "apply_campaign": 1
+            }
+        },
+        {
+            "id": "8a8a0c3d-d9f7-11ec-ba04-06ffa341e858",
+            "value": "27/06/2022",
+            "status": 1,
+            "type": {
+                "id": "c8e12aca-d9f5-11ec-ba04-06ffa341e858",
+                "name": "Días No Habiles",
+                "status": 1,
+                "apply_campaign": 1
+            }
+        },
+        {
+            "id": "87ec35cd-d9f7-11ec-ba04-06ffa341e858",
+            "value": "30/05/2022",
+            "status": 1,
+            "type": {
+                "id": "c8e12aca-d9f5-11ec-ba04-06ffa341e858",
+                "name": "Días No Habiles",
+                "status": 1,
+                "apply_campaign": 1
+            }
+        },
+        {
+            "id": "33d533d2-d9f6-11ec-ba04-06ffa341e858",
+            "value": "Anual",
+            "status": 1,
+            "type": {
+                "id": "c800e869-d9f5-11ec-ba04-06ffa341e858",
+                "name": "Frencuencia",
+                "status": 1,
+                "apply_campaign": 1
+            }
+        },
+        {
+            "id": "323873ff-d9f6-11ec-ba04-06ffa341e858",
+            "value": "Diario",
+            "status": 1,
+            "type": {
+                "id": "c800e869-d9f5-11ec-ba04-06ffa341e858",
+                "name": "Frencuencia",
+                "status": 1,
+                "apply_campaign": 1
+            }
+        },
+        {
+            "id": "5253a6bf-d9f6-11ec-ba04-06ffa341e858",
+            "value": "Domingo",
+            "status": 1,
+            "type": {
+                "id": "0634c3b5-d9f6-11ec-ba04-06ffa341e858",
+                "name": "Días ejecución",
+                "status": 1,
+                "apply_campaign": 1
+            }
+        },
+        {
+            "id": "4fd8363e-d9f6-11ec-ba04-06ffa341e858",
+            "value": "Jueves",
+            "status": 1,
+            "type": {
+                "id": "0634c3b5-d9f6-11ec-ba04-06ffa341e858",
+                "name": "Días ejecución",
+                "status": 1,
+                "apply_campaign": 1
+            }
+        },
+        {
+            "id": "4d7ae8ea-d9f6-11ec-ba04-06ffa341e858",
+            "value": "Lunes",
+            "status": 1,
+            "type": {
+                "id": "0634c3b5-d9f6-11ec-ba04-06ffa341e858",
+                "name": "Días ejecución",
+                "status": 1,
+                "apply_campaign": 1
+            }
+        },
+        {
+            "id": "4e443113-d9f6-11ec-ba04-06ffa341e858",
+            "value": "Martes",
+            "status": 1,
+            "type": {
+                "id": "0634c3b5-d9f6-11ec-ba04-06ffa341e858",
+                "name": "Días ejecución",
+                "status": 1,
+                "apply_campaign": 1
+            }
+        },
+        {
+            "id": "330d2b51-d9f6-11ec-ba04-06ffa341e858",
+            "value": "Mensual",
+            "status": 1,
+            "type": {
+                "id": "c800e869-d9f5-11ec-ba04-06ffa341e858",
+                "name": "Frencuencia",
+                "status": 1,
+                "apply_campaign": 1
+            }
+        },
+        {
+            "id": "4f0f2fc7-d9f6-11ec-ba04-06ffa341e858",
+            "value": "Miércoles",
+            "status": 1,
+            "type": {
+                "id": "0634c3b5-d9f6-11ec-ba04-06ffa341e858",
+                "name": "Días ejecución",
+                "status": 1,
+                "apply_campaign": 1
+            }
+        },
+        {
+            "id": "51803e05-d9f6-11ec-ba04-06ffa341e858",
+            "value": "Sabádo",
+            "status": 1,
+            "type": {
+                "id": "0634c3b5-d9f6-11ec-ba04-06ffa341e858",
+                "name": "Días ejecución",
+                "status": 1,
+                "apply_campaign": 1
+            }
+        },
+        {
+            "id": "349ddb2f-d9f6-11ec-ba04-06ffa341e858",
+            "value": "Unica Vez",
+            "status": 1,
+            "type": {
+                "id": "c800e869-d9f5-11ec-ba04-06ffa341e858",
+                "name": "Frencuencia",
+                "status": 1,
+                "apply_campaign": 1
+            }
+        },
+        {
+            "id": "50a2c545-d9f6-11ec-ba04-06ffa341e858",
+            "value": "Viernes",
+            "status": 1,
+            "type": {
+                "id": "0634c3b5-d9f6-11ec-ba04-06ffa341e858",
+                "name": "Días ejecución",
+                "status": 1,
+                "apply_campaign": 1
+            }
+        }
+    ]
+}
