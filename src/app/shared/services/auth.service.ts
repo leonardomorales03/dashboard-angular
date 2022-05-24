@@ -18,7 +18,7 @@ export class AuthService {
 
 
   login(user: string, psw: string):Observable<any>{ 
-    return this.http.post('http://localhost:8181/smssolution/users/login', {user, psw});
+    return this.http.post('/smssolution/users/login', { "username": user, "password": psw });
   }
 
 
