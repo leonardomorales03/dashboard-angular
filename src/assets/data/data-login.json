@@ -1,0 +1,9 @@
+{
+    "state": true,
+    "code": 200,
+    "message": "Success",
+    "data": {
+        "message": "Autenticación satisfactoria",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IiBlbWFpbDFAZW1haWwuY29tIiwidXNlcl9pZCI6IjYzODA1NjMwLWQ5ZTgtMTFlYy04NWNjLTAyYTk5N2MxMTBmOCIsIm5hbWUiOiJwcnVlYmEiLCJsYXN0X25hbWUiOiJ1bmRlZmluZWQiLCJpZGVudGlmaWNhdGlvbl9udW1iZXIiOjUyMzQ1MjMsInN0YXRlIjoxLCJ1c2VyIjoidGVzdCIsImlhdCI6MTY1MzI3Mjk3OSwiZXhwIjoxNjUzMzAyOTc5fQ.pPhGeQdH144heM24CaccpHvWOW9OzfY8SpOnWk9GDS4"
+    }
+} 
