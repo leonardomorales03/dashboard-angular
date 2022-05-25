@@ -15,6 +15,11 @@ import { AuthService } from './shared/services/auth.service';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { InterceptorService } from './shared/services/interceptor.service';
 import { ParameterService } from './shared/services/parameter.service';
+import { AdminUserComponent } from './pages/admin-user/admin-user.component';
+import { DetalleUserComponent } from './pages/admin-user/detalle-user/detalle-user.component';
+import { ModalService } from './shared/services/modal.service';
+import { CampaniaComponent } from './pages/campania/campania.component';
+import { DetalleCampaniaComponent } from './pages/campania/detalle-campania/detalle-campania.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +29,11 @@ import { ParameterService } from './shared/services/parameter.service';
     FooterComponent,
     DashboardComponent,
     BellsComponent,
-    LoginComponent
+    LoginComponent,
+    AdminUserComponent, 
+    DetalleUserComponent, 
+    CampaniaComponent, 
+    DetalleCampaniaComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,6 +46,7 @@ import { ParameterService } from './shared/services/parameter.service';
     AuthGuard,
     AuthService,
     ParameterService,
+    ModalService,
   ],
   bootstrap: [AppComponent]
 })

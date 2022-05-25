@@ -1,0 +1,45 @@
+
+<app-detalle-user [userDetail]="userSeleccionado"></app-detalle-user>
+
+<div class="content">
+    <div class="animated fadeIn">
+        <div class="row">
+            <div class="col-lg-10">
+                <div class="card">
+                    <div class="card-header">
+                        <strong class="card-title">Usuarios</strong>
+                        <button type="button" class="btn btn-success" (click)="openModal(null)" style="margin-left: 78%;">Crear</button>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Identificación</th>
+                                    <th scope="col">Actualizar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let user of userList;let i=index" > 
+                                    <th scope="row">{{i+1}}</th>
+                                    <td>{{user.user_id}}</td>
+                                    <td>{{user.name}}</td>
+                                    <td>{{user.email}}</td>
+                                    <td>{{user.identification_number}}</td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary" (click)="openModal(user)">Actualizar</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.table-stats -->
+                </div>
+            </div>
+
+
+          
+        </div>

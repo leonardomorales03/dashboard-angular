@@ -1,0 +1,18 @@
+{
+    "state": true,
+    "code": 201,
+    "message": [
+        {
+            "user_id": "63805630-d9e8-11ec-85cc-02a997c110f8",
+            "email": " email1@email.com",
+            "name": "prueba",
+            "identification_number": 5234523,
+            "state": {
+                "type": "Buffer",
+                "data": [
+                    1
+                ]
+            }
+        }
+    ]
+}

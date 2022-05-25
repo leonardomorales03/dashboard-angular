@@ -22,6 +22,7 @@ export class AuthService {
 
 
   login(user: string, psw: string): Observable<any> {
+    //se deja asi la url ya el path lo completa proxy.json
     return this.http.post('/smssolution/users/login', { "username": user, "password": psw });
     //return this.http.post('http://localhost:8181/smssolution/users/login', {user, psw});
     //return this.http.get('assets/data/data-login.json'); 

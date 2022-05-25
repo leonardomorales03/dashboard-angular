@@ -1,0 +1,55 @@
+<div class="open-modal animacion fadeIn" *ngIf="modalService.modalCamp">
+    <div  class="modal" tabindex="-1" role="dialog" style="display: block;">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Campañas</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="closeModal()">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="">
+                    <div class="card">
+                        <div class="">
+                        <div class="card-body card-block">
+                            <div class="form-group">
+                                <label for="company" class=" form-control-label">Nombre</label>
+                                <input type="text" id="Nombre" placeholder="Nombre" class="form-control" [(ngModel)]='campDetail.name' [ngModelOptions]="{standalone: true}">
+                            </div>
+                            <div class="form-group">
+                                <label for="vat" class=" form-control-label">Descripción</label>
+                                <input type="text" id="Identificación" placeholder="Descripción" class="form-control" [(ngModel)]='campDetail.description' [ngModelOptions]="{standalone: true}">
+                            </div>
+                            <div class="row form-group" >
+                                <div class="col-8">
+                                    <div class="form-group"><label for="city" class=" form-control-label">Fecha inicial</label>
+                                    <input type="date" id="username" placeholder="Fecha inicial" class="form-control" [(ngModel)]='campDetail.initial_date' [ngModelOptions]="{standalone: true}"></div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="form-group"><label for="postal-code" class=" form-control-label">Fecha final</label>
+                                    <input type="date" id="contraseña" placeholder="Fecha final" class="form-control" [(ngModel)]='campDetail.end_date' [ngModelOptions]="{standalone: true}"></div>
+                                </div>
+                            </div>
+                            <div class="row form-group" >
+                                <div *ngFor="let param of paramTypeList" >
+                                    <button type="button" class="btn btn-info" style="margin-left: 4px;" (click)="showParam(param.id)">{{param.name}}</button>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-4" *ngFor="let pa of paramList" >
+                                    <label class="switch switch-3d switch-primary mr-3"><input type="checkbox" class="switch-input" checked="true"> {{pa.value}}</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" (click)="saveCamp()">Save</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="closeModal()">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>

@@ -17,7 +17,7 @@ export class InterceptorService {
         });
     } else {
       newRequest = req.clone({
-        headers: req.headers.set('Authorization', 'Bearer ' + 'aca va el token')
+        headers: req.headers.set('Authorization', 'Bearer ' + localStorage.getItem('token'))
       });
     }
 

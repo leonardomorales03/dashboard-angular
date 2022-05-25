@@ -1,0 +1,49 @@
+<div class="open-modal animacion fadeIn" *ngIf="modalService.modal">
+    <div  class="modal" tabindex="-1" role="dialog" style="display: block;">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Usuario</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="closeModal()">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="">
+                    <div class="card">
+                        <div class="">
+                        <div class="card-body card-block">
+                            <div class="form-group">
+                                <label for="company" class=" form-control-label">Nombre</label>
+                                <input type="text" id="Nombre" placeholder="Nombre" class="form-control" [(ngModel)]='userDetail.name' [ngModelOptions]="{standalone: true}">
+                            </div>
+                            <div class="form-group">
+                                <label for="vat" class=" form-control-label">Identificación</label>
+                                <input type="text" id="Identificación" placeholder="Número documento" class="form-control" [(ngModel)]='userDetail.identification_number' [ngModelOptions]="{standalone: true}">
+                            </div>
+                            <div class="form-group">
+                                <label for="street" class=" form-control-label">Email</label>
+                                <input type="text" id="email" placeholder="Email" class="form-control" [(ngModel)]='userDetail.email' [ngModelOptions]="{standalone: true}">
+                            </div>
+                            <div class="row form-group" *ngIf="!userDetail.user_id">
+                                <div class="col-8">
+                                    <div class="form-group"><label for="city" class=" form-control-label">Username</label>
+                                    <input type="text" id="username" placeholder="Username" class="form-control" [(ngModel)]='userDetail.user' [ngModelOptions]="{standalone: true}"></div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="form-group"><label for="postal-code" class=" form-control-label">Contraseña</label>
+                                    <input type="text" id="contraseña" placeholder="Contraseña" class="form-control" [(ngModel)]='userDetail.password' [ngModelOptions]="{standalone: true}"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" (click)="saveUser()">Save</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="closeModal()">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>

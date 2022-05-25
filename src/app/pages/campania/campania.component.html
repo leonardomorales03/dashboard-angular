@@ -1,0 +1,49 @@
+
+<app-detalle-campania [campDetail]="campSeleccionado"></app-detalle-campania> 
+
+<div class="content">
+    <div class="animated fadeIn">
+        <div class="row">
+            <div class="col-lg-10">
+                <div class="card">
+                    <div class="card-header">
+                        <strong class="card-title">Campañas</strong>
+                        <button type="button" class="btn btn-success" (click)="openModal()" style="margin-left: 78%;">Crear</button>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Descripción</th>
+                                    <th scope="col">Fecha inicial</th>
+                                    <th scope="col">Fecha final</th>
+                                    <th scope="col">User id</th>
+                                    <th scope="col">actualizar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let camp of campaingList;let i=index" > 
+                                    <th scope="row">{{i+1}}</th>
+                                    <td>{{camp.campaign_id}}</td>
+                                    <td>{{camp.name}}</td>
+                                    <td>{{camp.description}}</td>
+                                    <td>{{camp.initial_date}}</td>
+                                    <td>{{camp.end_date}}</td>
+                                    <td>{{camp.user_id}}</td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary" (click)="openModal()">Actualizar</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.table-stats -->
+                </div>
+            </div>
+
+
+          
+        </div>
