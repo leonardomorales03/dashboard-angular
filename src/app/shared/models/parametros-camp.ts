@@ -5,5 +5,6 @@ export class ParametrosCamp{
         public type_id? : string,
         public registration_date? : string,
         public campaign_id? : string, 
+        public user_id? : string,
     ){}
 }

@@ -38,7 +38,7 @@
                             </div>
                             <div class="row form-group">
                                 <div class="col-4" *ngFor="let pa of paramList" >
-                                    <label class="switch switch-3d switch-primary mr-3"><input type="checkbox" class="switch-input" checked="true"> {{pa.value}}</label>
+                                    <label class="switch switch-3d switch-primary mr-3"><input type="checkbox" class="switch-input" (change)="validarParam($event, pa)"> {{pa.value}}</label>
                                 </div>
                             </div>
                         </div>

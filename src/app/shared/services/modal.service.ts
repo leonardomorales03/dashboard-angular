@@ -5,6 +5,7 @@ export class ModalService {
 
   modal: boolean = false;
   modalCamp: boolean = false;
+  modalMensaje: boolean = false;
 
   constructor() { }
 
@@ -24,5 +25,14 @@ export class ModalService {
 
   closeModalCamp(){
     this.modalCamp = false;
+  }
+
+  openModalMensaje(){
+    this.modalMensaje = true;
+    console.log('entro al servicio mensaje', this.modal);
+  }
+
+  closeModalMensaje(){
+    this.modalMensaje = false;
   }
 }

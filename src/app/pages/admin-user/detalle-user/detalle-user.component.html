@@ -19,22 +19,22 @@
                             </div>
                             <div class="form-group">
                                 <label for="vat" class=" form-control-label">Identificación</label>
-                                <input type="text" id="Identificación" placeholder="Número documento" class="form-control" [(ngModel)]='userDetail.identification_number' [ngModelOptions]="{standalone: true}">
+                                <input type="number" id="Identificación" placeholder="Número documento" class="form-control" [(ngModel)]='userDetail.identification_number' [ngModelOptions]="{standalone: true}">
                             </div>
                             <div class="form-group">
                                 <label for="street" class=" form-control-label">Email</label>
-                                <input type="text" id="email" placeholder="Email" class="form-control" [(ngModel)]='userDetail.email' [ngModelOptions]="{standalone: true}">
+                                <input type="email" id="email" placeholder="Email" class="form-control" [(ngModel)]='userDetail.email' [ngModelOptions]="{standalone: true}">
                             </div>
-                            <div class="row form-group" *ngIf="!userDetail.user_id">
-                                <div class="col-8">
+                            <!-- <div class="row form-group" *ngIf="!userDetail.user_id"> -->
+                                <div class="">
                                     <div class="form-group"><label for="city" class=" form-control-label">Username</label>
                                     <input type="text" id="username" placeholder="Username" class="form-control" [(ngModel)]='userDetail.user' [ngModelOptions]="{standalone: true}"></div>
                                 </div>
-                                <div class="col-8">
+                                <div class="">
                                     <div class="form-group"><label for="postal-code" class=" form-control-label">Contraseña</label>
-                                    <input type="text" id="contraseña" placeholder="Contraseña" class="form-control" [(ngModel)]='userDetail.password' [ngModelOptions]="{standalone: true}"></div>
+                                    <input type="password" id="contraseña" placeholder="Contraseña" class="form-control" [(ngModel)]='userDetail.password' [ngModelOptions]="{standalone: true}"></div>
                                 </div>
-                            </div>
+                            <!-- </div> -->
                         </div>
                     </div>
                 </div>

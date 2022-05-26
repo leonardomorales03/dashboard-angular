@@ -17,7 +17,7 @@ export class CampaniaComponent implements OnInit {
                 private modalService: ModalService,) { }
 
   ngOnInit() {
-    this.campSeleccionado = new CampaniaDetalle();
+    //this.campSeleccionado = new CampaniaDetalle();
     this.getListCampaing();
   }
 
@@ -32,8 +32,21 @@ export class CampaniaComponent implements OnInit {
 
   }
 
-  openModal(){
+  openModal(campId){
     this.modalService.openModalCamp();
+    if(campId === null){
+      this.campSeleccionado = new CampaniaDetalle();
+    }else{
+      this.parameterService.getCampign(campId).subscribe(
+        data => {
+          console.log('campaña seleccionada', data)
+          this.campSeleccionado = data;
+          this.campSeleccionado.initial_date = data.initial_date.split('T')[0];
+          this.campSeleccionado.end_date = data.end_date.split('T')[0];
+          console.log('campaña seleccionada final', this.campSeleccionado)
+        }
+      )
+    }
   }
 
 }

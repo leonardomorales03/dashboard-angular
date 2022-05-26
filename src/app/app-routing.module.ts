@@ -5,18 +5,20 @@ import { AuthGuard } from './pages/auth/auth.guard';
 import { BellsComponent } from './pages/bells/bells.component';
 import { CampaniaComponent } from './pages/campania/campania.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { EnvioMensajeComponent } from './pages/envio-mensaje/envio-mensaje.component';
 import { LoginComponent } from './pages/login/login.component';
 
 
 // tslint:disable-next-line:variable-name
 const app_routes: Routes = [
 
-    { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
+    // { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
     { path: 'bells', component: BellsComponent, canActivate: [AuthGuard] },
     { path: 'adminUser', component: AdminUserComponent, canActivate: [AuthGuard] },
     { path: 'camp', component: CampaniaComponent, canActivate: [AuthGuard] },
+    { path: 'mensaje', component: EnvioMensajeComponent, canActivate: [AuthGuard] },
     { path: 'login', component: LoginComponent }, 
-    { path: '**', pathMatch: 'full', redirectTo: 'dashboard' },
+    { path: '**', pathMatch: 'full', redirectTo: 'camp' },
 
 
 ];

@@ -20,6 +20,7 @@ import { DetalleUserComponent } from './pages/admin-user/detalle-user/detalle-us
 import { ModalService } from './shared/services/modal.service';
 import { CampaniaComponent } from './pages/campania/campania.component';
 import { DetalleCampaniaComponent } from './pages/campania/detalle-campania/detalle-campania.component';
+import { EnvioMensajeComponent } from './pages/envio-mensaje/envio-mensaje.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { DetalleCampaniaComponent } from './pages/campania/detalle-campania/deta
     AdminUserComponent, 
     DetalleUserComponent, 
     CampaniaComponent, 
-    DetalleCampaniaComponent,
+    DetalleCampaniaComponent, EnvioMensajeComponent,
   ],
   imports: [
     BrowserModule,

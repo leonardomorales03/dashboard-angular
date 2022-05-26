@@ -8,7 +8,7 @@
                 <div class="card">
                     <div class="card-header">
                         <strong class="card-title">Campañas</strong>
-                        <button type="button" class="btn btn-success" (click)="openModal()" style="margin-left: 78%;">Crear</button>
+                        <button type="button" class="btn btn-success" (click)="openModal(null)" style="margin-left: 86%;">Crear</button>
                     </div>
                     <div class="card-body">
                         <table class="table table-striped">
@@ -34,7 +34,7 @@
                                     <td>{{camp.end_date}}</td>
                                     <td>{{camp.user_id}}</td>
                                     <td>
-                                        <button type="button" class="btn btn-primary" (click)="openModal()">Actualizar</button>
+                                        <button type="button" class="btn btn-primary" (click)="openModal(camp.campaign_id)">Actualizar</button>
                                     </td>
                                 </tr>
                             </tbody>
