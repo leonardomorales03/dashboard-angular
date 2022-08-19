@@ -1,6 +1,6 @@
 {
     "/smssolution/*": {
-      "target": "http://localhost:8181/",
+      "target": "http://smssolutions-gateway/",
       "secure": false,
       "logLevel": "debug",
       "changeOrigin": true

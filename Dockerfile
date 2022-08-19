@@ -3,6 +3,9 @@ FROM node:14 as build
 WORKDIR /usr/
 COPY ./ .
 
+# Install prerequisites
+RUN apt-get update && apt-get install -y curl
+
 RUN npm cache clean --force
 RUN npm install -g @angular/cli --force
 RUN npm install --no-package-lock --legacy-peer-deps
