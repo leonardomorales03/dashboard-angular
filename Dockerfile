@@ -3,9 +3,6 @@ FROM node:14 as build
 WORKDIR /usr/
 COPY ./ .
 
-# Install prerequisites
-RUN apt-get update && apt-get install -y curl
-
 RUN npm cache clean --force
 RUN npm install -g @angular/cli --force
 RUN npm install --no-package-lock --legacy-peer-deps
@@ -22,6 +19,7 @@ RUN npm run build -- --outputPath=dist
 FROM nginx:1.16.0-alpine
 
 # copy artifact build from the 'build environment'
+COPY production.nginx.proxy.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /usr/dist /usr/share/nginx/html
 
 # expose port 80

@@ -1,0 +1,58 @@
+<div class="content">
+    <div class="animated fadeIn">
+        <div class="row">
+            <div class="col-lg-10">
+                <div class="card">
+                    <div class="card-header">
+                        <strong class="card-title">Reportes</strong>
+                    </div>
+                    <div class="card-body">
+                        <form class="form-inline" stala>
+                            <label class="sr-only" for="input-report-individual-number">Número de teléfono</label>
+                            <input id="input-report-individual-number" type="text" class="form-control mb-2 mr-sm-2"
+                                [(ngModel)]="data.number_phone" placeholder="Número teléfono"  (keypress)="numberOnly($event)" maxlength="12"
+                                [ngModelOptions]="{standalone: true}">
+                            <button id="btn-report-inidividual" type="submit" class="btn btn-primary mb-2"
+                                (click)="getIndividualLog()">Consultar</button>
+                        </form>
+                        <div class="row container" *ngIf="logs.length>0">
+                            <table class="table table-responsive table table-hover" style="font-size: 0.8em;">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Operador de destino</th>
+                                        <th scope="col">Texto</th>
+                                        <th scope="col">Estado</th>
+                                        <th scope="col">Certificado?</th>
+                                        <th scope="col">Fecha Solicitud</th>
+                                        <th scope="col">Fecha Envio</th>
+                                        <th scope="col">Fecha Entrega Operador</th>
+                                        <th scope="col">Fecha Entrega Celular</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let log of logs;let i=index">
+                                        <th scope="row">{{i+1}}</th>
+                                        <td>{{log.Destino}}</td>
+                                        <td>{{log.SMS}}</td>
+                                        <td>{{log.Estado}}</td>
+                                        <td>{{log.SMS_Certificado}}</td>
+                                        <td>{{log.Fecha_solicitud}}</td>
+                                        <td>{{log.Fecha_de_envio}}</td>
+                                        <td>{{log.Fecha_entrega_al_operador}}</td>
+                                        <td>{{log.Fecha_entrega_celular}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row container" *ngIf="ejecutado && logs.length<=0">
+                            <div class="alert alert-danger" role="alert">
+                                No se encontraron valores para el número digitado.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

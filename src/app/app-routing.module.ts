@@ -7,6 +7,7 @@ import { CampaniaComponent } from './pages/campania/campania.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { EnvioMensajeComponent } from './pages/envio-mensaje/envio-mensaje.component';
 import { LoginComponent } from './pages/login/login.component';
+import { IndividualComponent } from './pages/reports/individual/individual.component';
 
 
 // tslint:disable-next-line:variable-name
@@ -18,6 +19,7 @@ const app_routes: Routes = [
     { path: 'camp', component: CampaniaComponent, canActivate: [AuthGuard] },
     { path: 'mensaje', component: EnvioMensajeComponent, canActivate: [AuthGuard] },
     { path: 'login', component: LoginComponent }, 
+    { path: 'reports/individual', component: IndividualComponent, canActivate: [AuthGuard] },
     { path: '**', pathMatch: 'full', redirectTo: 'camp' },
 
 
